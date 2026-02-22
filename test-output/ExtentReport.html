@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web | Mobile | API Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 23, 2026 12:14:37 am</span></a>
+<a href="#"><span class="badge badge-primary">Feb 23, 2026 01:25:45 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,79 +75,119 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">verifyOrangeHrmQuickLaunch</p>
             <p class="text-sm">
-              <span>12:14:37 am</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:25:45 am</span> / <span>00:00:00:872</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyOrangeHrmQuickLaunch</h5>
-<span class='badge badge-success'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-danger'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-skip">verifyOrangeHrmQuickLaunch</h5>
+<span class='badge badge-success'>02.23.2026 1:25:45 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:872</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:25:46 am</td>
+        <td>
+          Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testWebPageLoadPerformance</p>
             <p class="text-sm">
-              <span>12:14:37 am</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:25:45 am</span> / <span>00:00:00:872</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testWebPageLoadPerformance</h5>
-<span class='badge badge-success'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-danger'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-skip">testWebPageLoadPerformance</h5>
+<span class='badge badge-success'>02.23.2026 1:25:45 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:872</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:25:46 am</td>
+        <td>
+          Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testApiResponsePerformance</p>
+            <p class="name">testWebPageLoadPerformance</p>
             <p class="text-sm">
-              <span>12:14:37 am</span> / <span>00:00:24:393</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:25:46 am</span> / <span>00:00:00:027</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testApiResponsePerformance</h5>
-<span class='badge badge-success'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-danger'>02.23.2026 12:15:02 am</span>
-<span class='badge badge-default'>00:00:24:393</span>
+<h5 class="test-status text-skip">testWebPageLoadPerformance</h5>
+<span class='badge badge-success'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:027</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -158,24 +199,16 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:15:02 am</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:25:46 am</td>
         <td>
-          Page Load Time: <b>4236 ms</b> (SLA: 5000 ms)
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:15:02 am</td>
-        <td>
-          Web performance met SLA requirements.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:15:02 am</td>
-        <td>
-          Test Passed
+          Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
         </td>
       </tr>
   </tbody>
@@ -183,25 +216,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="skip" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyOrangeHrmMobileView</p>
+            <p class="name">verifyOrangeHrmQuickLaunch</p>
             <p class="text-sm">
-              <span>12:14:37 am</span> / <span>00:00:34:204</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:25:46 am</span> / <span>00:00:00:027</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyOrangeHrmMobileView</h5>
-<span class='badge badge-success'>02.23.2026 12:14:37 am</span>
-<span class='badge badge-danger'>02.23.2026 12:15:11 am</span>
-<span class='badge badge-default'>00:00:34:204</span>
+<h5 class="test-status text-skip">verifyOrangeHrmQuickLaunch</h5>
+<span class='badge badge-success'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:027</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -213,59 +246,110 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:14:52 am</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:25:46 am</td>
         <td>
-          Navigated to OrangeHRM Login Page
+          Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
         </td>
       </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testWebPageLoadPerformance</p>
+            <p class="text-sm">
+              <span>1:25:46 am</span> / <span>00:00:00:021</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testWebPageLoadPerformance</h5>
+<span class='badge badge-success'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:14:55 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:25:46 am</td>
         <td>
-          Entered credentials and clicked login
+          Test Failed: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
         </td>
       </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyOrangeHrmQuickLaunch</p>
+            <p class="text-sm">
+              <span>1:25:46 am</span> / <span>00:00:00:020</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyOrangeHrmQuickLaunch</h5>
+<span class='badge badge-success'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-danger'>02.23.2026 1:25:46 am</span>
+<span class='badge badge-default'>00:00:00:020</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:14:55 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:25:46 am</td>
         <td>
-          Dashboard loaded successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:14:57 am</td>
-        <td>
-          Found 6 Quick Launch options.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:14:57 am</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:15:07 am</td>
-        <td>
-          Navigated to OrangeHRM Login Page in Mobile View
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:15:11 am</td>
-        <td>
-          Mobile View login and dashboard load successful.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:15:11 am</td>
-        <td>
-          Test Passed
+          Test Failed: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
         </td>
       </tr>
   </tbody>
@@ -287,25 +371,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 23, 2026 12:14:37 am</h3>
+<h3>Feb 23, 2026 01:25:45 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 23, 2026 12:15:12 am</h3>
+<h3>Feb 23, 2026 01:25:47 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -321,13 +405,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='33%'><b>2</b> tests failed,
+<b>4</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -344,10 +428,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='54%'><b>6</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>5</b> others
+<small data-tooltip='33%'><b>2</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -363,7 +447,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyOrangeHrmQuickLaunch":0,"testWebPageLoadPerformance":0,"testApiResponsePerformance":24.393,"verifyOrangeHrmMobileView":34.204
+"verifyOrangeHrmQuickLaunch":0.872,"testWebPageLoadPerformance":0.872,"testWebPageLoadPerformance":0.027,"verifyOrangeHrmQuickLaunch":0.027,"testWebPageLoadPerformance":0.021,"verifyOrangeHrmQuickLaunch":0.02
 };
 </script>
 <div class="row">
@@ -390,10 +474,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 0,
+failParent: 2,
 warningParent: 0,
-skipParent: 0,
+skipParent: 4,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -407,11 +491,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 6,
-failEvents: 0,
+passEvents: 0,
+failEvents: 2,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 5
+skipEvents: 4,
+infoEvents: 0
 };
 </script>        </div>
       </div>

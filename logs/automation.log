@@ -1,25 +1,68 @@
-2026-02-23 00:14:37 [main] INFO  com.automation.tests.MasterSuiteTests - Test Suite Execution Started. Configuration loaded.
-2026-02-23 00:14:37 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmQuickLaunch ==========
-2026-02-23 00:14:37 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
-2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testApiResponsePerformance ==========
-2026-02-23 00:14:37 [TestNG-test=All Tests-3] WARN  com.automation.tests.PerformanceTests - Skipping testApiResponsePerformance - API testing is disabled in config.
-2026-02-23 00:14:37 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Initializing Web Driver for Parallel Execution...
-2026-02-23 00:14:37 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
-2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testApiResponsePerformance ==========
+2026-02-23 01:25:45 [main] INFO  com.automation.tests.MasterSuiteTests - Test Suite Execution Started. Configuration loaded.
+2026-02-23 01:25:45 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
+2026-02-23 01:25:45 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmQuickLaunch ==========
+2026-02-23 01:25:45 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Initializing Web Driver for Parallel Execution...
+2026-02-23 01:25:45 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmQuickLaunch ==========
 
-2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmMobileView ==========
-2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Initializing Mobile View Driver for Parallel Execution...
-2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmQuickLaunch ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testWebPageLoadPerformance ==========
 
-2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Actual Page Load Time: 4236ms
-2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Test Passed Successfully.
-2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Browser/Driver closed successfully.
-2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testWebPageLoadPerformance ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmQuickLaunch ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Initializing Web Driver for Parallel Execution...
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Test Skipped: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testWebPageLoadPerformance ==========
 
-2026-02-23 00:15:11 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-23 00:15:12 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-23 00:15:12 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmMobileView ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmQuickLaunch ==========
 
-2026-02-23 00:15:12 [main] INFO  com.automation.tests.MasterSuiteTests - Extent Report generated successfully.
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmQuickLaunch ==========
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Initializing Web Driver for Parallel Execution...
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] ERROR com.automation.tests.MasterSuiteTests - Test Failed: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] ERROR com.automation.tests.PerformanceTests - Test Failed: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'HP', ip: '192.168.31.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+2026-02-23 01:25:46 [TestNG-test=All Tests-1] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmMobileView ==========
+
+2026-02-23 01:25:46 [TestNG-test=All Tests-2] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testApiResponsePerformance ==========
+
+2026-02-23 01:25:47 [main] INFO  com.automation.tests.MasterSuiteTests - Extent Report generated successfully.
