@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="7" passed="6" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-22T21:10:49 IST" name="Hybrid Framework Suite" finished-at="2026-02-22T21:12:24 IST" duration-ms="95585">
+  <suite started-at="2026-02-22T22:29:57 IST" name="Hybrid Framework Suite" finished-at="2026-02-22T22:31:33 IST" duration-ms="95930">
     <groups>
     </groups>
-    <test started-at="2026-02-22T21:10:49 IST" name="Functional and Performance Tests" finished-at="2026-02-22T21:12:24 IST" duration-ms="95585">
+    <test started-at="2026-02-22T22:29:57 IST" name="Functional and Performance Tests" finished-at="2026-02-22T22:31:33 IST" duration-ms="95930">
       <class name="com.automation.tests.PerformanceTests">
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:19 IST" name="startTest" finished-at="2026-02-22T21:12:19 IST" duration-ms="1" status="PASS">
+        <test-method signature="testWebPageLoadPerformance()[pri:1, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:28 IST" name="testWebPageLoadPerformance" finished-at="2026-02-22T22:31:33 IST" duration-ms="4788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebPageLoadPerformance -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:28 IST" name="startTest" finished-at="2026-02-22T22:31:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="testWebPageLoadPerformance()[pri:1, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:19 IST" name="testWebPageLoadPerformance" finished-at="2026-02-22T21:12:24 IST" duration-ms="5197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWebPageLoadPerformance -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:24 IST" name="tearDown" finished-at="2026-02-22T21:12:24 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:33 IST" name="tearDown" finished-at="2026-02-22T22:31:33 IST" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:24 IST" name="startTest" finished-at="2026-02-22T21:12:24 IST" duration-ms="1" status="SKIP">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:33 IST" name="startTest" finished-at="2026-02-22T22:31:33 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="testApiResponsePerformance()[pri:2, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:24 IST" name="testApiResponsePerformance" finished-at="2026-02-22T21:12:24 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testApiResponsePerformance()[pri:2, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:33 IST" name="testApiResponsePerformance" finished-at="2026-02-22T22:31:33 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[API Testing is disabled in config.]]>
@@ -130,7 +130,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApiResponsePerformance -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T21:12:24 IST" name="tearDown" finished-at="2026-02-22T21:12:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.PerformanceTests@4152d38d]" started-at="2026-02-22T22:31:33 IST" name="tearDown" finished-at="2026-02-22T22:31:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,11 +143,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.tests.PerformanceTests -->
       <class name="com.automation.tests.MasterSuiteTests">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:10:48 IST" name="setupSuite" finished-at="2026-02-22T21:10:49 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:29:57 IST" name="setupSuite" finished-at="2026-02-22T22:29:57 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:10:49 IST" name="startTest" finished-at="2026-02-22T21:10:49 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:29:58 IST" name="startTest" finished-at="2026-02-22T22:29:58 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,7 +158,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:10:49 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T21:11:00 IST" duration-ms="10810" status="PASS">
+        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:29:58 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T22:30:09 IST" duration-ms="11245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrangeHrmLoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:00 IST" name="tearDown" finished-at="2026-02-22T21:11:00 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:09 IST" name="tearDown" finished-at="2026-02-22T22:30:09 IST" duration-ms="199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,7 +185,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:00 IST" name="startTest" finished-at="2026-02-22T21:11:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:09 IST" name="startTest" finished-at="2026-02-22T22:30:09 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -196,7 +196,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:00 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T21:11:23 IST" duration-ms="22764" status="PASS">
+        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:09 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T22:30:30 IST" duration-ms="20983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,7 +212,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrangeHrmLoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:23 IST" name="tearDown" finished-at="2026-02-22T21:11:23 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:30 IST" name="tearDown" finished-at="2026-02-22T22:30:30 IST" duration-ms="186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,7 +223,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:23 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T21:11:45 IST" duration-ms="21545" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:30 IST" name="startTest" finished-at="2026-02-22T22:30:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.tests.MasterSuiteTests.verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String) throws java.net.MalformedURLException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:30 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T22:30:54 IST" duration-ms="23602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,18 +250,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrangeHrmLoginDDT -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:23 IST" name="startTest" finished-at="2026-02-22T21:11:23 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automation.tests.MasterSuiteTests.verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String) throws java.net.MalformedURLException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:45 IST" name="tearDown" finished-at="2026-02-22T21:11:45 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:54 IST" name="tearDown" finished-at="2026-02-22T22:30:54 IST" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +261,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:45 IST" name="startTest" finished-at="2026-02-22T21:11:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:54 IST" name="startTest" finished-at="2026-02-22T22:30:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,7 +272,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:11:45 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T21:12:08 IST" duration-ms="23013" status="PASS">
+        <test-method signature="verifyOrangeHrmLoginDDT(java.lang.String,java.lang.String)[pri:1, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:30:54 IST" name="verifyOrangeHrmLoginDDT" data-provider="loginCredentials" finished-at="2026-02-22T22:31:17 IST" duration-ms="23144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +288,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrangeHrmLoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:12:08 IST" name="tearDown" finished-at="2026-02-22T21:12:08 IST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:31:17 IST" name="tearDown" finished-at="2026-02-22T22:31:17 IST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -299,11 +299,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyOrangeHrmMobileView()[pri:2, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:12:08 IST" name="verifyOrangeHrmMobileView" finished-at="2026-02-22T21:12:19 IST" duration-ms="10248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOrangeHrmMobileView -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:12:08 IST" name="startTest" finished-at="2026-02-22T21:12:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:31:17 IST" name="startTest" finished-at="2026-02-22T22:31:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -314,7 +310,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:12:19 IST" name="tearDown" finished-at="2026-02-22T21:12:19 IST" duration-ms="247" status="PASS">
+        <test-method signature="verifyOrangeHrmMobileView()[pri:2, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:31:17 IST" name="verifyOrangeHrmMobileView" finished-at="2026-02-22T22:31:28 IST" duration-ms="10180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrangeHrmMobileView -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:31:28 IST" name="tearDown" finished-at="2026-02-22T22:31:28 IST" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -325,7 +325,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T21:12:24 IST" name="generateReport" finished-at="2026-02-22T21:12:25 IST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.automation.tests.MasterSuiteTests@578524c3]" started-at="2026-02-22T22:31:33 IST" name="generateReport" finished-at="2026-02-22T22:31:33 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
