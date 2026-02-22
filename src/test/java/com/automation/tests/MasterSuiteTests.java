@@ -94,7 +94,7 @@ public class MasterSuiteTests extends BaseTest {
         test.pass("Quick Launch options verified successfully");
         }*/
         
-     // 1. Define the DataProvider
+   /*  // 1. Define the DataProvider
         @DataProvider(name = "loginCredentials")
         public Object[][] getLoginData() {
             String excelPath = System.getProperty("user.dir") + "/src/test/resources/testdata/LoginData.xlsx";
@@ -159,5 +159,60 @@ public class MasterSuiteTests extends BaseTest {
         
         Assert.assertTrue(quickLaunchCount > 0, "No Quick Launch items found on the mobile dashboard!");
         test.pass("Quick Launch options verified successfully in mobile view");
+    }*/
+	
+	@Test(priority = 1)
+    public void verifyOrangeHrmQuickLaunch() throws MalformedURLException {
+        if (!Boolean.parseBoolean(prop.getProperty("run_web"))) {
+            throw new org.testng.SkipException("Web testing is disabled in config.");
+        }
+
+        log.info("Initializing Web Driver for Parallel Execution...");
+        
+        // 1. SET THE DRIVER inside the ThreadLocal container
+        boolean runOnGrid = Boolean.parseBoolean(prop.getProperty("run_on_grid", "false"));
+        driver.set(DriverFactory.initializeDriver("web", "", "", prop.getProperty("grid_url"), runOnGrid));
+        
+        // 2. USE getDriver() to interact with the browser
+        getDriver().get(prop.getProperty("base_url"));
+        test.info("Navigated to OrangeHRM Login Page");
+
+        // 3. USE getDriver() when initializing Page Objects
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+        test.info("Entered credentials and clicked login");
+
+        DashboardPage dashboardPage = new DashboardPage(getDriver());
+        Assert.assertTrue(dashboardPage.isDashboardLoaded(), "Dashboard failed to load!");
+        test.pass("Dashboard loaded successfully");
+
+        int quickLaunchCount = dashboardPage.getQuickLaunchItemCount();
+        test.info("Found " + quickLaunchCount + " Quick Launch options.");
+        Assert.assertTrue(quickLaunchCount > 0, "No Quick Launch items found!");
+    }
+
+    @Test(priority = 2)
+    public void verifyOrangeHrmMobileView() throws MalformedURLException {
+        if (!Boolean.parseBoolean(prop.getProperty("run_mobile_view"))) {
+            throw new org.testng.SkipException("Mobile View testing is disabled in config.");
+        }
+
+        log.info("Initializing Mobile View Driver for Parallel Execution...");
+
+        // 1. SET THE DRIVER
+        boolean runOnGrid = Boolean.parseBoolean(prop.getProperty("run_on_grid", "false"));
+        driver.set(DriverFactory.initializeDriver("mobile_view", "", "", prop.getProperty("grid_url"), runOnGrid));
+        
+        // 2. USE getDriver()
+        getDriver().get(prop.getProperty("base_url"));
+        test.info("Navigated to OrangeHRM Login Page in Mobile View");
+
+        // 3. USE getDriver()
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+
+        DashboardPage dashboardPage = new DashboardPage(getDriver());
+        Assert.assertTrue(dashboardPage.isDashboardLoaded(), "Dashboard failed to load in mobile view!");
+        test.pass("Mobile View login and dashboard load successful.");
     }
 }

@@ -1,17 +1,16 @@
 name: Hybrid Automation Suite
 
-# Triggers: Run on code push, pull request, or a schedule (e.g., every day at midnight)
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * *' # Midnight UTC
+    - cron: '0 0 * * *' 
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest # Runs on a Linux cloud machine
+    runs-on: ubuntu-latest 
 
     steps:
     - name: Checkout Code
@@ -24,16 +23,37 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    # --- NEW DOCKER STEPS ---
+    - name: Start Selenium Grid via Docker Compose
+      run: docker-compose up -d
+
+    - name: Wait for Selenium Grid to be Ready
+      # The Grid takes a few seconds to fully boot up. We pause the pipeline for 15 seconds to ensure it is ready to accept tests.
+      run: sleep 15 
+      
+    - name: Verify Grid Status
+      # Pings the Grid to log its status in the GitHub Actions console
+      run: curl -s http://localhost:4444/status | grep "ready"
+
+    # --- EXISTING TEST EXECUTION ---
     - name: Run Maven Tests
-      # Using 'continue-on-error' so the pipeline doesn't crash before uploading the report
       continue-on-error: true 
+      # Ensure your config.properties in GitHub has run_on_grid=true
       run: mvn clean test -DsuiteXmlFile=testng.xml
 
+    # --- NEW DOCKER TEARDOWN ---
+    - name: Stop and Remove Selenium Grid
+      # Runs regardless of whether tests passed or failed
+      if: always() 
+      run: docker-compose down
+
+    # --- EXISTING REPORTING ---
     - name: Upload Extent Report and Logs
       uses: actions/upload-artifact@v3
+      # Runs regardless of whether tests passed or failed
+      if: always() 
       with:
         name: Automation-Test-Results
-        # Uploads the Extent HTML report and Log4j2 logs
         path: |
           test-output/ExtentReport.html
           logs/automation.log

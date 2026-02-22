@@ -24,10 +24,17 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 public class BaseTest {
-    protected WebDriver driver;
+    //protected WebDriver driver; // This is for single driver
+	// With this ThreadLocal declaration:
+	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     protected static Properties prop;
     protected static ExtentReports report;
     protected ExtentTest test;
+    
+ // A helper method to easily get the driver in the tests:
+    public WebDriver getDriver() {
+        return driver.get();
+    }
     
     // Initialize the Logger
     protected Logger log = LogManager.getLogger(this.getClass());
@@ -86,8 +93,9 @@ public class BaseTest {
             }
         }
 
-        if (driver != null) {
-            driver.quit();
+        if (getDriver() != null) {
+        	getDriver().quit();
+        	driver.remove(); // Destroys the thread safely
             log.info("Browser/Driver closed successfully.");
         }
         log.info("========== Ending Test: " + result.getMethod().getMethodName() + " ==========\n");

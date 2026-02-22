@@ -1,43 +1,25 @@
-2026-02-22 22:29:57 [main] INFO  com.automation.tests.MasterSuiteTests - Test Suite Execution Started. Configuration loaded.
-2026-02-22 22:29:58 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmLoginDDT ==========
-2026-02-22 22:29:58 [main] INFO  com.automation.tests.MasterSuiteTests - Testing Login with Username: Admin | Password: admin123
-2026-02-22 22:30:09 [main] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-22 22:30:09 [main] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-22 22:30:09 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmLoginDDT ==========
+2026-02-23 00:14:37 [main] INFO  com.automation.tests.MasterSuiteTests - Test Suite Execution Started. Configuration loaded.
+2026-02-23 00:14:37 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmQuickLaunch ==========
+2026-02-23 00:14:37 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
+2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testApiResponsePerformance ==========
+2026-02-23 00:14:37 [TestNG-test=All Tests-3] WARN  com.automation.tests.PerformanceTests - Skipping testApiResponsePerformance - API testing is disabled in config.
+2026-02-23 00:14:37 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Initializing Web Driver for Parallel Execution...
+2026-02-23 00:14:37 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
+2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testApiResponsePerformance ==========
 
-2026-02-22 22:30:09 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmLoginDDT ==========
-2026-02-22 22:30:09 [main] INFO  com.automation.tests.MasterSuiteTests - Testing Login with Username: InvalidUser | Password: admin123
-2026-02-22 22:30:30 [main] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-22 22:30:30 [main] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-22 22:30:30 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmLoginDDT ==========
+2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmMobileView ==========
+2026-02-23 00:14:37 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Initializing Mobile View Driver for Parallel Execution...
+2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
+2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
+2026-02-23 00:14:57 [TestNG-test=All Tests-2] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmQuickLaunch ==========
 
-2026-02-22 22:30:30 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmLoginDDT ==========
-2026-02-22 22:30:30 [main] INFO  com.automation.tests.MasterSuiteTests - Testing Login with Username: Admin | Password: wrongpass
-2026-02-22 22:30:54 [main] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-22 22:30:54 [main] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-22 22:30:54 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmLoginDDT ==========
+2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Actual Page Load Time: 4236ms
+2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Test Passed Successfully.
+2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - Browser/Driver closed successfully.
+2026-02-23 00:15:02 [TestNG-test=All Tests-1] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testWebPageLoadPerformance ==========
 
-2026-02-22 22:30:54 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmLoginDDT ==========
-2026-02-22 22:30:54 [main] INFO  com.automation.tests.MasterSuiteTests - Testing Login with Username: empty | Password: empty
-2026-02-22 22:31:17 [main] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-22 22:31:17 [main] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-22 22:31:17 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmLoginDDT ==========
+2026-02-23 00:15:11 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
+2026-02-23 00:15:12 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
+2026-02-23 00:15:12 [TestNG-test=All Tests-3] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmMobileView ==========
 
-2026-02-22 22:31:17 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Starting Test: verifyOrangeHrmMobileView ==========
-2026-02-22 22:31:28 [main] INFO  com.automation.tests.MasterSuiteTests - Test Passed Successfully.
-2026-02-22 22:31:28 [main] INFO  com.automation.tests.MasterSuiteTests - Browser/Driver closed successfully.
-2026-02-22 22:31:28 [main] INFO  com.automation.tests.MasterSuiteTests - ========== Ending Test: verifyOrangeHrmMobileView ==========
-
-2026-02-22 22:31:28 [main] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testWebPageLoadPerformance ==========
-2026-02-22 22:31:28 [main] INFO  com.automation.tests.PerformanceTests - Starting Web Performance Test. SLA limit: 5000ms
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - Actual Page Load Time: 3889ms
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - Test Passed Successfully.
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - Browser/Driver closed successfully.
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testWebPageLoadPerformance ==========
-
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - ========== Starting Test: testApiResponsePerformance ==========
-2026-02-22 22:31:33 [main] WARN  com.automation.tests.PerformanceTests - Skipping testApiResponsePerformance - API testing is disabled in config.
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - Browser/Driver closed successfully.
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.PerformanceTests - ========== Ending Test: testApiResponsePerformance ==========
-
-2026-02-22 22:31:33 [main] INFO  com.automation.tests.MasterSuiteTests - Extent Report generated successfully.
+2026-02-23 00:15:12 [main] INFO  com.automation.tests.MasterSuiteTests - Extent Report generated successfully.
