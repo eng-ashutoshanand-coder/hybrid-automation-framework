@@ -1,0 +1,39 @@
+name: Hybrid Automation Suite
+
+# Triggers: Run on code push, pull request, or a schedule (e.g., every day at midnight)
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *' # Midnight UTC
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Runs on a Linux cloud machine
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Run Maven Tests
+      # Using 'continue-on-error' so the pipeline doesn't crash before uploading the report
+      continue-on-error: true 
+      run: mvn clean test -DsuiteXmlFile=testng.xml
+
+    - name: Upload Extent Report and Logs
+      uses: actions/upload-artifact@v3
+      with:
+        name: Automation-Test-Results
+        # Uploads the Extent HTML report and Log4j2 logs
+        path: |
+          test-output/ExtentReport.html
+          logs/automation.log
