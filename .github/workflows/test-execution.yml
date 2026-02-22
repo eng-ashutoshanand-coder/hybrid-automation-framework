@@ -26,7 +26,7 @@ jobs:
 
     # --- NEW DOCKER STEPS ---
     - name: Start Selenium Grid via Docker Compose
-      run: docker-compose up -d
+      run: docker compose up -d
 
     - name: Wait for Selenium Grid to be Ready
       # The Grid takes a few seconds to fully boot up. We pause the pipeline for 15 seconds to ensure it is ready to accept tests.
@@ -46,7 +46,7 @@ jobs:
     - name: Stop and Remove Selenium Grid
       # Runs regardless of whether tests passed or failed
       if: always() 
-      run: docker-compose down
+      run: docker compose down
 
     # --- EXISTING REPORTING ---
     - name: Upload Extent Report and Logs
